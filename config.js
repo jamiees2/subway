@@ -1,12 +1,12 @@
 exports.dev = {
-    port: process.env.PORT || 3000,
-    client_port: process.env.PORT || 3000,
-    mongoose_auth: process.env.MONGODB_URL || 'mongodb://mongodb@localhost/subway'
+    port: 3000,
+    client_port: 3000,
+    mongoose_auth: 'mongodb://mongodb@localhost/subway'
 }
 
 exports.prod = {
-    port: process.env.PORT || 14858, // Nodester port
-    client_port: 80, // Websockets talk on port 80 on Nodester, regardless of listen port
+    port: 3000, // Nodester port
+    client_port: 3000, // Websockets talk on port 80 on Nodester, regardless of listen port
     mongoose_auth: process.env.MONGOOSE_AUTH
 }
 
